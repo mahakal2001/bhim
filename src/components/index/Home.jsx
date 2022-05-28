@@ -66,12 +66,12 @@ const Home = () => {
     <!--Profile start--> */}
 
       <div className="profile" style={{
-          backgroundImage: 'url('+profileImg+')',
-          backgroundSize: "cover",
-          height: "65vh",
-          color: "#f5f5f5"
-        }}>
-        
+        backgroundImage: 'url(' + profileImg + ')',
+        backgroundSize: "cover",
+        height: "65vh",
+        color: "#f5f5f5"
+      }}>
+
         <img className="top-icon" src="./images/weather-icon.png" alt="" />
         <div className="profile-describetion">
           <h1>I am a Computer Student <br /> & <br />Web Developer Begginer</h1> <br /> <br />
@@ -144,10 +144,13 @@ const Home = () => {
 
 
       <div className="personal-expretion " id="skill" style={{
-          backgroundColor: "rgba(5, 1, 1, 0.555)",
-          
-        }}>
+        backgroundColor: "#222",
 
+      }}>
+        <div className="projectHeading">
+          <h1>WELCOME TO MY Personal Expretion PAGE</h1>
+          <hr className="dotted-hrr" />
+        </div>
         {/* <!-- work Expretion start --> */}
 
         <div className="work-pretion col-4">
@@ -255,13 +258,67 @@ const Home = () => {
         {/* <!-- Skill Expretion End --> */}
 
       </div>
+      {/* <!-- Personal Expretion End here -->}
+
+       
+
+      {/* Project page start */}
+
+      <div className="projectMain">
+        <div className="projectHeading">
+          <h1>WELCOME TO MY PROJECT PAGE</h1>
+          <hr className="dotted-hrr" />
+        </div>
+        {/* Item 1 */}
+        <div className="wrapper">
+          <div className="cardProject ">
+            <img src="./images/mahadev.jpg" alt="" />
+            <div className="info">
+              <h1>Weather App</h1>
+              <button><a href="https://mahakal2001.github.io/personal-website/">Demo</a></button>
+              <button><a href="https://mahakal2001.github.io/personal-website/">Code</a></button>
+            </div>
+
+          </div>
+
+          <div className="cardProject ">
+            <img src="./images/mahadev.jpg" alt="" />
+            <div className="info">
+              <h1>Weather App</h1>
+              <button><a href="https://mahakal2001.github.io/personal-website/">Demo</a></button>
+              <button><a href="https://mahakal2001.github.io/personal-website/">Code</a></button>
+            </div>
+
+          </div>
+
+          <div className="cardProject ">
+            <img src="./images/mahadev.jpg" alt="" />
+            <div className="info">
+              <h1>Weather App</h1>
+              <button><a href="https://mahakal2001.github.io/personal-website/">Demo</a></button>
+              <button><a href="https://mahakal2001.github.io/personal-website/">Code</a></button>
+            </div>
+
+          </div>
+
+          <div className="cardProject ">
+            <img src="./images/mahadev.jpg" alt="" />
+            <div className="info">
+              <h1>Weather App</h1>
+              <button><a href="https://mahakal2001.github.io/personal-website/">Demo</a></button>
+              <button><a href="https://mahakal2001.github.io/personal-website/">Code</a></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* Project page End */}
 
 
 
-      {/* <!-- Personal Expretion End here -->
 
-
-    <!-- Achivement-contract Start here --> */}
+      {/* Achivement-contract Start here */}
 
 
       <div className="Achivement-contract" id="contract">

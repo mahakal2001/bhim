@@ -67,6 +67,13 @@ h2{
     width: 70px;
 }
 
+.dotted-hrr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 320px;
+}
+
 [class*="col-"]{
     float: left;
     padding: 10px;
@@ -822,6 +829,102 @@ button:hover{
 
 /* Footer End here */
 
+/* Project page start */
+.projectMain{
+    padding: 2.5% 7%;
+    background-color: #222;
+}
+
+.projectHeading h1{
+    
+    color: white;
+
+}
+
+.wrapper{
+    margin-left: 200px;
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardProject{
+    
+    margin: 30px;
+    width: 500px;
+    height: 400px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+
+}
+.cardProject:hover{
+    transform: translateY(20px);
+}
+
+.cardProject::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.cardProject:hover::before{
+    opacity: 1;
+}
+
+.cardProject img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.cardProject .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+
+}
+
+.cardProject:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+.info button{
+    background-color: orangered;
+    border-radius: 20px;
+    border-color: orangered;
+    color: white;
+    margin: 20px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.info button a:hover{
+    color: white;
+}
+/* Project page start */
 
 
 
@@ -869,6 +972,7 @@ button:hover{
     }
     .navbar a{
         font-size: large;
+       
     }
     .text_ofF{
         font-size: 2rem;
