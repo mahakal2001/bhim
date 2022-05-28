@@ -1,21 +1,23 @@
 import React from 'react'
 import "./home.css"
+import profileImg from "./background.jpg";
+
 
 const Home = () => {
   return (
     <div>
       {/* <!--Nav Bar start--> */}
 
-      {/* <div class="navbar">
-        <div class="navLogo col-2">
+      {/* <div className="navbar">
+        <div className="navLogo col-2">
           <img src="./images/logo.png" alt="logo" />
         </div>
 
-        <div class="navHeading col-4">
+        <div className="navHeading col-4">
           <h1>BHIM CHARAN BHAKTA</h1>
         </div>
 
-        <div class="navMenu col-6">
+        <div className="navMenu col-6">
           <a href="#">Home</a>
           <a href="#about-me-id">About</a>
           <a href="#skill-add">Skill</a>
@@ -29,7 +31,7 @@ const Home = () => {
         <div className="row">
           <div className="col-md-12 col-12 mx-auto">
             <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-              <a className="navbar-brand" href="/"><span className='text_of'>GO</span>FooD</a>
+              <a className="navbar-brand" href="/"><span className='text_of'>BHIM</span>CHARAN<span className='text_ofF'>BHAKTA</span></a>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -37,10 +39,19 @@ const Home = () => {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item active">
-                    <a href="/" className="nav-link">Home</a>
+                    <a href="#" className="nav-link">Home</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/cart">Cart</a>
+                    <a className="nav-link" href="#about">AboutMe</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#skill">Skill</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#project">Project</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#contract">Contract</a>
                   </li>
                 </ul>
               </div>
@@ -54,13 +65,19 @@ const Home = () => {
 
     <!--Profile start--> */}
 
-      <div class="profile">
-        <img class="top-icon" src="./images/weather-icon.png" alt="" />
-        <div class="profile-describetion">
-          <h1>I am a Computer Student <br /> & <br />Web Developer Begginer</h1>
+      <div className="profile" style={{
+          backgroundImage: 'url('+profileImg+')',
+          backgroundSize: "cover",
+          height: "65vh",
+          color: "#f5f5f5"
+        }}>
+        
+        <img className="top-icon" src="./images/weather-icon.png" alt="" />
+        <div className="profile-describetion">
+          <h1>I am a Computer Student <br /> & <br />Web Developer Begginer</h1> <br /> <br />
           <p>Hi  !! My name is Bhim Charan Bhakta. Welcome to my personal page that I've designed to showcase my skill and expertise that I've accumulated over the year.</p>
         </div>
-        <img class="buttom-icon" src="./images/weather-icon.png" alt="" />
+        <img className="buttom-icon" src="./images/weather-icon.png" alt="" />
       </div>
 
       {/* <!--Profile End-->
@@ -68,46 +85,46 @@ const Home = () => {
 
     <!-- About me starts here --> */}
 
-      <div class="about-me" id="about-me-id">
+      <div className="about-me" id="about">
         <h2>ABOUT ME</h2>
-        <hr class="dotted-hr" />
-        <div class="aboutme-img">
+        <hr className="dotted-hr" />
+        <div className="aboutme-img">
           <img src="./images/photo.jpg" alt="" />
         </div>
 
-        <div class="aboutme-descrivetion">
-          <p class="pop-stylw">I like to call myself" a Computer Student & web devloper".</p>
-          <p class="pop-stylw">In short, web developers build and maintain websites. Web developers often work for clients who are trying to get their product or service onto the web.</p>
+        <div className="aboutme-descrivetion">
+          <p className="pop-stylw">I like to call myself" a Computer Student & web devloper".</p>
+          <p className="pop-stylw">In short, web developers build and maintain websites. Web developers often work for clients who are trying to get their product or service onto the web.</p>
 
 
 
-          <hr class="aboutme-hr" />
+          <hr className="aboutme-hr" />
           <p>Name: Bhim Charan Bhakta</p>
 
 
-          <hr class="aboutme-hr" />
+          <hr className="aboutme-hr" />
           <p>Address:  West Bengal,India</p>
 
 
-          <div class="aboutme-hover">
-            <hr class="aboutme-hr" />
+          <div className="aboutme-hover">
+            <hr className="aboutme-hr" />
             <p>Email: <a href="mailto:bhaktabhim2001@gmail.com" target="blank">bhaktabhim2001@gmail.com</a></p>
 
 
-            <hr class="aboutme-hr" />
+            <hr className="aboutme-hr" />
             <p>Phone: <a href="tel:+7602165626" target="blank">7602165626</a></p>
 
 
-            <hr class="aboutme-hr" />
+            <hr className="aboutme-hr" />
             <p>Website: <a href="https://mahakal2001.github.io/bg-cal/" target="blank">mahakal2001.github.io/</a></p>
-            <hr class="aboutme-hr" />
+            <hr className="aboutme-hr" />
           </div>
 
 
 
 
           <a target="blank" href="./images/Bhim_resume.pdf" download>
-            <button class="cv-button">Download CV</button>
+            <button className="cv-button">Download CV</button>
           </a>
 
 
@@ -126,26 +143,29 @@ const Home = () => {
 
 
 
-      <div class="personal-expretion " id="skill-add">
+      <div className="personal-expretion " id="skill" style={{
+          backgroundColor: "rgba(5, 1, 1, 0.555)",
+          
+        }}>
 
         {/* <!-- work Expretion start --> */}
 
-        <div class="work-pretion col-4">
-          <div class="card">
-            <div class="img-icon">
+        <div className="work-pretion col-4">
+          <div className="card">
+            <div className="img-icon">
               <img src="./images/work.png" alt="" />
             </div>
             <br />
 
 
 
-            <div class="title-h">
+            <div className="title-h">
               <h1>Work Expretion</h1>
             </div>
             <br />
 
 
-            <div class="descrive-work">
+            <div className="descrive-work">
 
               *** NO Expretion ***
             </div>
@@ -157,26 +177,26 @@ const Home = () => {
 
         {/* <!-- Education Expretion start --> */}
 
-        <div class="education col-4">
+        <div className="education col-4">
 
-          <div class="card">
-            <div class="img-icon">
+          <div className="card">
+            <div className="img-icon">
               <img src="./images/education.png" alt="" />
             </div>
             <br />
 
 
 
-            <div class="title-h">
+            <div className="title-h">
               <h1>Education Qualification</h1>
             </div>
 
 
 
-            <div class="descrive-wor">
+            <div className="descrive-wor">
               <ol>
-                <li class="h">
-                  <strong class="strong">Madhyamik Bord: West Bengal Board of Secondary Education</strong><br />
+                <li className="h">
+                  <strong className="strong">Madhyamik Bord: West Bengal Board of Secondary Education</strong><br />
                   01/01/2015 - 01/01/2017 <br />
                   Mallik Chak Amar Smriti Vidyapith (H.S) <br />
                   Nandakumar, West Bengal (India) <br />
@@ -185,7 +205,7 @@ const Home = () => {
                 <hr />
 
                 <li>
-                  <strong class="strong">H.S Bord: West Bengal State Council of Technical & Vocational Education and Skill Development</strong><br />
+                  <strong className="strong">H.S Bord: West Bengal State Council of Technical & Vocational Education and Skill Development</strong><br />
                   01/01/2017 - 01/01/2019 <br />
                   Bohich Beria High School <br />
                   Nandakumar, West Bengal (India) <br />
@@ -194,7 +214,7 @@ const Home = () => {
                 <hr />
 
                 <li>
-                  <strong class="strong">BCA Bord: Maulana Abul Kalam Azad University of Technology</strong><br />
+                  <strong className="strong">BCA Bord: Maulana Abul Kalam Azad University of Technology</strong><br />
                   01/01/2019 - 01/01/2022 <br />
                   Global Institute of Science and Technology - [GIST], East Medinipur <br />
                   Haldia, West Bengal (India) <br />
@@ -211,23 +231,23 @@ const Home = () => {
 
         <!-- Skill Expretion start --> */}
 
-        <div class="skill-infromation col-4">
-          <div class="card">
-            <div class="img-icon">
+        <div className="skill-infromation col-4">
+          <div className="card">
+            <div className="img-icon">
               <img src="./images/skill.png" alt="" />
             </div>
             <br />
-            <div class="title-h">
+            <div className="title-h">
               <h1>SKILL</h1>
             </div>
             <ul>
-              <li class="html">HTML</li>
-              <li class="css">C</li>
-              <li class="py">CSS</li>
-              <li class="js">JAVA</li>
-              <li class="java">C++</li>
-              <li class="c">JAVASCRIPT</li>
-              <li class="cplus">PYTHON</li>
+              <li className="html">C</li>
+              <li className="css">JAVA</li>
+              <li className="py">C++</li>
+              <li className="js">JAVASCRIPT</li>
+              <li className="java">EXPRESS JS</li>
+              <li className="c">NODE JS</li>
+              <li className="cplus">MONGO DB</li>
             </ul>
           </div>
         </div>
@@ -244,15 +264,15 @@ const Home = () => {
     <!-- Achivement-contract Start here --> */}
 
 
-      <div class="Achivement-contract" id="contract-this">
+      <div className="Achivement-contract" id="contract">
 
 
-        <div class="achivement col-4">
+        <div className="achivement col-4">
 
 
 
           <h2>ACHIVEMENT</h2>
-          <hr class="dotted-hr" />
+          <hr className="dotted-hr" />
           <br /><br />
 
 
@@ -267,11 +287,11 @@ const Home = () => {
         </div>
 
 
-        <div class="contrantMe col-4">
+        <div className="contrantMe col-4">
 
 
           <h2>CONTRACT ME</h2>
-          <hr class="dotted-hr" />
+          <hr className="dotted-hr" />
 
 
 
@@ -289,20 +309,20 @@ const Home = () => {
 
         </div>
 
-        <div class="moreWay-contract col-4">
+        <div className="moreWay-contract col-4">
 
           <h2>More Way to Contract</h2>
-          <hr class="dotted-hr" />
+          <hr className="dotted-hr" />
 
-          <div class="media-buttons">
-            <a target="blank" href="https://www.youtube.com/channel/UCVMKUJ3aE_cvpOFv90kM34g" class="request-callback"><img src="./images/youtube.png" alt="Youtube" /></a>
+          <div className="media-buttons">
+            <a target="blank" href="https://www.youtube.com/channel/UCVMKUJ3aE_cvpOFv90kM34g" className="request-callback"><img src="./images/youtube.png" alt="Youtube" /></a>
             <a target="blank" href="https://www.facebook.com/bhim_charan_bhakta/"><img src="./images/facebook.png" alt="Facebook" /></a>
             <a target="blank" href="https://www.instagram.com/bhim_charan_bhakta/"><img src="./images/instagram.png" alt="Instragram" /></a>
           </div>
 
 
-          <div class="media-button">
-            <a target="blank" href="https://www.linkedin.com/in/bhim-charan-bhakta-997496175/" class="request-callback"><img src="./images/linkedin-brands.svg" alt="LinkedIn" /></a>
+          <div className="media-button">
+            <a target="blank" href="https://www.linkedin.com/in/bhim-charan-bhakta-997496175/" className="request-callback"><img src="./images/linkedin-brands.svg" alt="LinkedIn" /></a>
             <a target="blank" href="https://github.com/mahakal2001"><img src="./images/github.png" alt="GitHub" /></a>
             <a target="blank" href="mailto:bhaktabhim2001@gmail.com"><img src="./images/gmail.png" alt="Gmail" /></a>
           </div>
@@ -319,15 +339,20 @@ const Home = () => {
     <!-- Footer start here --> */}
 
 
-      <div class="footer">
-        <div class="footer-menu col-6">
+      <div className="footer">
+        <div className="footer-menu col-4">
           <a href="#">Home</a>
-          <a href="#about-me-id">About</a>
-          <a href="#skill-add">Skill</a>
-          <a href="#contract-this">Contract</a>
+          <a href="#about">About</a>
+          <a href="#skill">Skill</a>
+          <a href="#project">Project</a>
+          <a href="#contract">Contract</a>
         </div>
 
-        <div class="footer-descrivetion">
+        <div className="mahadev col-4">
+          <img src="./images/mahadev.jpg" alt="" />
+        </div>
+
+        <div className="footer-descrivetion col-4">
           <p>Created With 💝 By MahakaL</p>
         </div>
 

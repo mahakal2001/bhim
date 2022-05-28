@@ -10,6 +10,22 @@
 
 */
 
+
+
+
+
+
+
+/* Google fonts add */
+
+
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Goldman:wght@700&family=Metal+Mania&display=swap");
+
+
+
 *{
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
@@ -124,15 +140,18 @@ h2{
 } */
 
 .navbar{width: 100%;
-    background-image: linear-gradient(to right,hsl(29, 90%, 51%),rgb(120, 15, 161));
+    background-image: linear-gradient(to right,hsl(172, 63%, 36%),rgb(120, 15, 161));
 }
 
 .navbar{
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-
+.navbar a{
+    font-weight: bold;
+    font-size: medium;
+}
 
 .navbar-brand{
     font-family: 'Piazzolla', serif;
@@ -144,15 +163,24 @@ h2{
 
 
 .text_of{
-    font-size: 2rem;
-    color: rgb(200, 255, 0);
-    font-family: 'Vujahday Script', cursive;
+    font-size: 1.5rem;
+    color: orange;
+    font-family: 'Goldman', cursive;
+    font-weight: bold;
+}
+
+.text_ofF{
+    font-size: 1.5rem;
+    color: rgb(12, 184, 12);
+    font-family: 'Goldman', cursive;
+    font-weight: bold;
 }
 
 .nav-link{
     color: white!important;
     font-size: 1rem!important;
     font-weight: bolder;
+    margin: 10px;
 }
 
 .nav-link:hover{
@@ -183,11 +211,14 @@ h2{
 }
 
 .profile{
+    margin-top: 40px;
     padding: 130px 10px;
     position: relative;
     text-align: center;
     /* background: url("../../../public/images/background.jpg"); */
+   
     width: 100%;
+    
 }
 
 
@@ -214,6 +245,7 @@ h2{
 }
 
 .profile-describetion h1{
+    font-weight: bolder;
     font-size: 3rem;
     font-family: 'Satisfy', cursive;
     color: white;
@@ -438,6 +470,7 @@ h2{
 
 
 .descrive-wor{
+    font-size: small;
     color: black;
     text-align: left;
 }
@@ -464,7 +497,10 @@ hr{
 
 .personal-expretion{
     padding: 1% 0%;
+    /* background-color: rgba(5, 1, 1, 0.055); */
 }
+
+
 
 .img-icon img{
     height: 100px;
@@ -772,7 +808,10 @@ button:hover{
 }
 
 
-
+.footer .mahadev img{
+    height: 430px;
+    width: 320px;
+}
 
 .footer::after{
     content: '';
@@ -783,3 +822,55 @@ button:hover{
 
 /* Footer End here */
 
+
+
+
+/* desktop style */
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .about-me{
+        width: 100%;
+    }
+    .descrive-wor{
+        font-size: medium;
+    }
+    .footer-descrivetion p{
+        margin-top: 180px;
+        
+        
+    }
+    .footer-menu{
+        margin-top: 60px;
+    }
+    /*  */
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text_of{
+        font-size: 2rem;
+    }
+    .navbar a{
+        font-size: large;
+    }
+    .text_ofF{
+        font-size: 2rem;
+    }
+  }
