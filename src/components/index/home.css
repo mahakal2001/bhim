@@ -147,12 +147,12 @@ h2{
 } */
 
 .navbar{width: 100%;
-    background-image: linear-gradient(to right,hsl(172, 63%, 36%),rgb(120, 15, 161));
+    background-image: linear-gradient(to right,hsl(7, 84%, 51%),rgb(241, 8, 222),rgb(128, 2, 160));
 }
 
 .navbar{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .navbar a{
@@ -198,6 +198,22 @@ h2{
     color: white!important;
 }
 
+.navbar img{
+    border: 1px solid rgb(238, 203, 5);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0px 12px;
+
+}
+
+@media only screen and (max-width: 480px){
+    .navbar img{
+        margin: 0%;
+    }
+    
+}
+
 /* Navbar End */
 
 
@@ -218,7 +234,7 @@ h2{
 }
 
 .profile{
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 130px 10px;
     position: relative;
     text-align: center;
@@ -832,7 +848,7 @@ button:hover{
 /* Project page start */
 .projectMain{
     padding: 2.5% 7%;
-    background-color: #222;
+    background-image: linear-gradient(to right,rgb(206, 253, 75),orange,orangered,red);
 }
 
 .projectHeading h1{
@@ -852,20 +868,21 @@ button:hover{
 .cardProject{
     
     margin: 30px;
-    width: 500px;
+    width: 510px;
     height: 400px;
     padding: 2rem 1rem;
     background: #fff;
     position: relative;
     display: flex;
     align-items: flex-end;
-    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 18px rgba(0,0,0,0.5);
     transition: 0.5s ease-in-out;
 
 }
 .cardProject:hover{
     transform: translateY(20px);
 }
+
 
 .cardProject::before{
     content: "";
@@ -875,7 +892,7 @@ button:hover{
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    background: linear-gradient(to bottom, rgba(102, 238, 238, 0.596), rgb(2, 7, 88));
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
@@ -892,6 +909,7 @@ button:hover{
     position: absolute;
     top: 0;
     left: 0;
+   
 
 }
 
@@ -902,7 +920,13 @@ button:hover{
     opacity: 0;
     transform: translateY(30px);
     transition: 0.5s all;
+    
 
+}
+
+.info h1{
+    font-weight: bold;
+    color: rgb(144, 237, 240);
 }
 
 .cardProject:hover .info{
@@ -916,9 +940,19 @@ button:hover{
     border-radius: 20px;
     border-color: orangered;
     color: white;
-    margin: 20px;
-    width: 100px;
+    padding: 5px;
+    width: 160px;
     font-weight: bold;
+}
+
+.proBtn{
+    /* display: flex;
+    flex-direction: row; */
+    padding: 10px;
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .info button a:hover{
@@ -977,4 +1011,31 @@ button:hover{
     .text_ofF{
         font-size: 2rem;
     }
+  }
+
+  @media only screen and (max-width: 480px){
+      .wrapper{
+          display: block;
+          width: 100%;
+          margin-left: 0%;
+          padding-left: 0%;
+      }
+      .cardProject{
+          margin-left: 0%;
+          width: 100%;
+          height: 300px;
+      }
+      .proBtn{
+        /* display: flex;
+        flex-direction: row; */
+        width: 270px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .proBtn button{
+        width: 100px;
+    }
+
+
   }

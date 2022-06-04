@@ -31,6 +31,7 @@ const Home = () => {
         <div className="row">
           <div className="col-md-12 col-12 mx-auto">
             <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+              <img src="./images/photo.jpg" alt="" />
               <a className="navbar-brand" href="/"><span className='text_of'>BHIM</span>CHARAN<span className='text_ofF'>BHAKTA</span></a>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -272,41 +273,73 @@ const Home = () => {
         {/* Item 1 */}
         <div className="wrapper">
           <div className="cardProject ">
-            <img src="./images/mahadev.jpg" alt="" />
+            <img className='imgcard' src="./images/mahadev.jpg" alt="" />
             <div className="info">
-              <h1>Weather App</h1>
-              <button><a href="https://mahakal2001.github.io/personal-website/">Demo</a></button>
-              <button><a href="https://mahakal2001.github.io/personal-website/">Code</a></button>
+              <h1>Pizza App</h1>
+              <div className="proBtn">
+                <button><a target="blank" href="https://go-food.vercel.app/">Demo</a></button>
+                <button><a target="blank" href="https://github.com/mahakal2001/goFood">Code</a></button>
+              </div>
             </div>
 
           </div>
 
           <div className="cardProject ">
-            <img src="./images/mahadev.jpg" alt="" />
+            <img className='imgcard' src="./images/weather.png" alt="" />
             <div className="info">
-              <h1>Weather App</h1>
-              <button><a href="https://mahakal2001.github.io/personal-website/">Demo</a></button>
-              <button><a href="https://mahakal2001.github.io/personal-website/">Code</a></button>
+              <h1>Weather App & Currency Converter</h1>
+              <div className="proBtn">
+                <button><a target="blank" href="https://temp-app-mahakal.herokuapp.com/">Demo</a></button>
+                <button><a target="blank" href="https://github.com/mahakal2001/weater-project">Code</a></button>
+              </div>
             </div>
 
           </div>
 
           <div className="cardProject ">
-            <img src="./images/mahadev.jpg" alt="" />
+            <img src="./images/text.png" alt="" />
             <div className="info">
-              <h1>Weather App</h1>
-              <button><a href="https://mahakal2001.github.io/personal-website/">Demo</a></button>
-              <button><a href="https://mahakal2001.github.io/personal-website/">Code</a></button>
+              <h1>Text Utilities App</h1>
+              <div className="proBtn">
+                <button><a target="blank" href="https://text-formate-app.herokuapp.com/">Demo</a></button>
+                <button><a target="blank" href="https://github.com/mahakal2001/text-format">Code</a></button>
+              </div>
             </div>
 
           </div>
 
           <div className="cardProject ">
-            <img src="./images/mahadev.jpg" alt="" />
+            <img src="./images/business.png" alt="" />
             <div className="info">
-              <h1>Weather App</h1>
-              <button><a href="https://mahakal2001.github.io/personal-website/">Demo</a></button>
-              <button><a href="https://mahakal2001.github.io/personal-website/">Code</a></button>
+              <h1>Business App</h1>
+              <div className="proBtn">
+                <button><a target="blank" href="https://business-first-website.herokuapp.com/">Demo</a></button>
+                <button><a target="blank" href="https://business-first-website.herokuapp.com/">Code</a></button>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="cardProject ">
+            <img src="./images/weather2.png" alt="" />
+            <div className="info">
+              <h1>Weather App Using ReactJS</h1>
+              <div className="proBtn">
+                <button><a target="blank" href="https://weather-apps.vercel.app/">Demo</a></button>
+                <button><a target="blank" href="https://github.com/mahakal2001/weather-apps">Code</a></button>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="cardProject ">
+            <img src="./images/grocery.png" alt="" />
+            <div className="info">
+              <h1>Grocery App</h1>
+              <div className="proBtn">
+                <button><a target="blank" href="https://grocerys-chi.vercel.app/">Demo</a></button>
+                <button><a target="blank" href="https://github.com/mahakal2001/grocery">Code</a></button>
+              </div>
             </div>
 
           </div>
@@ -352,7 +385,7 @@ const Home = () => {
 
 
 
-          <form action="mailto:bhaktabhim2001@gmail.com" method="post" enctype="text/plain">
+          <form action="https://formsubmit.co/mahakal2001mahakal@gmail.com" method="POST">
 
             <p><input type="text" placeholder="Your Name" name="Name" /></p>
             <p><input type="email" placeholder="Email Name" name="email" /></p>
