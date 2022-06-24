@@ -6,26 +6,6 @@ import profileImg from "./background.jpg";
 const Home = () => {
   return (
     <div>
-      {/* <!--Nav Bar start--> */}
-
-      {/* <div className="navbar">
-        <div className="navLogo col-2">
-          <img src="./images/logo.png" alt="logo" />
-        </div>
-
-        <div className="navHeading col-4">
-          <h1>BHIM CHARAN BHAKTA</h1>
-        </div>
-
-        <div className="navMenu col-6">
-          <a href="#">Home</a>
-          <a href="#about-me-id">About</a>
-          <a href="#skill-add">Skill</a>
-          <a href="#contract-this">Contract</a>
-        </div>
-
-        
-      </div> */}
 
       <div className=" bhim">
         <div className="row">
@@ -149,7 +129,8 @@ const Home = () => {
 
       }}>
         <div className="projectHeading">
-          <h1>WELCOME TO MY Personal Expretion PAGE</h1>
+          <br />
+          <h1>WELCOME TO MY PERSONAL EXPRETION PAGE</h1>
           <hr className="dotted-hrr" />
         </div>
         {/* <!-- work Expretion start --> */}
@@ -199,32 +180,30 @@ const Home = () => {
 
             <div className="descrive-wor">
               <ol>
+                <li>
+                  <strong className="strong">BCA Bord: Maulana Abul Kalam Azad University of Technology</strong>
+                  <div className='skillPP'><span className='leftP'>91%</span> <span className='rightP'>2022</span></div>
+                  <p className='skillP'>Global Institute of Science and Technology - [GIST], East Medinipur Haldia, West Bengal (India) </p>
+
+                </li>
+
+                <hr />
+
+                <li>
+                  <strong className="strong">H.S Bord: West Bengal State Council of Technical & Vocational Education and Skill Development</strong>
+                  <div className='skillPP'><span className='leftP'>77%</span> <span className='rightP'>2019</span></div>
+                  <p className='skillP'>Bohich Beria High School Nandakumar, West Bengal (India)</p>
+
+                </li>
+                <hr />
+
                 <li className="h">
-                  <strong className="strong">Madhyamik Bord: West Bengal Board of Secondary Education</strong><br />
-                  01/01/2015 - 01/01/2017 <br />
-                  Mallik Chak Amar Smriti Vidyapith (H.S) <br />
-                  Nandakumar, West Bengal (India) <br />
-
+                  <strong className="strong">Madhyamik Bord: West Bengal Board of Secondary Education</strong>
+                  <div className='skillPP'><span className='leftP'>52%</span> <span className='rightP'>2017</span></div>
+                  <p className='skillP'>Mallik Chak Amar Smriti Vidyapith (H.S) Nandakumar, West Bengal (India)
+                  </p>
                 </li>
-                <hr />
 
-                <li>
-                  <strong className="strong">H.S Bord: West Bengal State Council of Technical & Vocational Education and Skill Development</strong><br />
-                  01/01/2017 - 01/01/2019 <br />
-                  Bohich Beria High School <br />
-                  Nandakumar, West Bengal (India) <br />
-
-                </li>
-                <hr />
-
-                <li>
-                  <strong className="strong">BCA Bord: Maulana Abul Kalam Azad University of Technology</strong><br />
-                  01/01/2019 - 01/01/2022 <br />
-                  Global Institute of Science and Technology - [GIST], East Medinipur <br />
-                  Haldia, West Bengal (India) <br />
-
-                </li>
-                <hr />
               </ol>
             </div>
           </div>
@@ -265,15 +244,28 @@ const Home = () => {
 
       {/* Project page start */}
 
-      <div className="projectMain">
+      <div className="projectMain" id="project">
         <div className="projectHeading">
           <h1>WELCOME TO MY PROJECT PAGE</h1>
           <hr className="dotted-hrr" />
         </div>
         {/* Item 1 */}
         <div className="wrapper">
+
           <div className="cardProject ">
-            <img className='imgcard' src="./images/mahadev.jpg" alt="" />
+            <img className='imgcard' src="./images/foodapp.png" alt="" />
+            <div className="info">
+              <h1>FooD App</h1>
+              <div className="proBtn">
+                <button><a target="blank" href="https://foodapp-five.vercel.app/">Demo</a></button>
+                <button><a target="blank" href="https://github.com/mahakal2001/foodapp">Code</a></button>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="cardProject ">
+            <img className='imgcard' src="./images/pizza.png" alt="" />
             <div className="info">
               <h1>Pizza App</h1>
               <div className="proBtn">
@@ -339,6 +331,18 @@ const Home = () => {
               <div className="proBtn">
                 <button><a target="blank" href="https://grocerys-chi.vercel.app/">Demo</a></button>
                 <button><a target="blank" href="https://github.com/mahakal2001/grocery">Code</a></button>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="cardProject ">
+            <img src="./images/cal.png" alt="" />
+            <div className="info">
+              <h1>Calculator</h1>
+              <div className="proBtn">
+                <button><a target="blank" href="https://mahakal2001.github.io/bhim-project/">Demo</a></button>
+                <button><a target="blank" href="https://github.com/mahakal2001/bhim-project">Code</a></button>
               </div>
             </div>
 
@@ -438,9 +442,6 @@ const Home = () => {
           <a href="#contract">Contract</a>
         </div>
 
-        <div className="mahadev col-4">
-          <img src="./images/mahadev.jpg" alt="" />
-        </div>
 
         <div className="footer-descrivetion col-4">
           <p>Created With 💝 By MahakaL</p>

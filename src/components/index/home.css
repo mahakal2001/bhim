@@ -70,8 +70,8 @@ h2{
 .dotted-hrr{
     border: dotted 6px white;
     border-bottom: none;
-    margin: 20px auto;
-    width: 320px;
+    margin: 10px auto;
+    width: 210px;
 }
 
 [class*="col-"]{
@@ -84,67 +84,6 @@ h2{
     width: 100%;
 }
 
-/* Navbar start */
-
-/* .navbar{
-    background-color: rgb(18, 139, 139);
-    padding: 1% 7%;
-    text-align: center;
-}
-
-.navLogo img{
-    width: 100px;
-    height: 100px;
-    border: 5px solid white;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 5px 5px 15px black;
-
-    
-    
-}
-
-.navLogo img:hover{
-    transform: scale(1.1);
-}
-
-
-
-
-.navHeading h1{
-    color: white;
-    margin: 0;
-    padding-top: 10px;
-    font-family: 'Goldman', cursive;
-    
-    
-}
-
-.navMenu{
-    display: flex;
-    flex-direction: column;
-}
-
-.navMenu a{
-    padding: 20px;
-    border-radius: 10px;
-    margin: 7px 0px;
-    background-color: rgb(6, 92, 92);
-
-}
-
-.navMenu a:hover{
-    transform: scale(1.1);
-    background-color: rgb(105, 103, 101);
-    color: yellow;
-    
-}
-
-.navbar::after{
-    content: '';
-    display: table;
-    clear: both;
-} */
 
 .navbar{width: 100%;
     background-image: linear-gradient(to right,hsl(7, 84%, 51%),rgb(241, 8, 222),rgb(128, 2, 160));
@@ -209,7 +148,24 @@ h2{
 
 @media only screen and (max-width: 480px){
     .navbar img{
+        margin: 0px 0px;
+    }
+    .navbar a{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .navbar{
         margin: 0%;
+        padding: 5px;
+    }
+
+    .text_ofF{
+        font-size: 15px;
+    }
+
+
+    .text_of{
+        font-size: 1.4rem;
     }
     
 }
@@ -445,6 +401,7 @@ h2{
 
 
 
+
 .personal-expretion::after{
     content: '';
     display: table;
@@ -458,6 +415,18 @@ h2{
 
 .personal-expretion{
     padding: 1% 0%;
+}
+
+.skillP{
+    font-size: small;
+
+}
+
+.skillPP{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(91, 245, 77);
 }
 
 .img-icon img{
@@ -501,6 +470,7 @@ h2{
 
 
 .strong{
+   
     color: white;
 }
 
@@ -685,7 +655,7 @@ hr{
 
 
 .Achivement-contract{
-    padding: 1% 7%;
+    padding: 0% 7%;
     background-color: rgb(56, 182, 182);
     color: white;
 }
@@ -831,10 +801,7 @@ button:hover{
 }
 
 
-.footer .mahadev img{
-    height: 430px;
-    width: 320px;
-}
+
 
 .footer::after{
     content: '';
@@ -846,8 +813,18 @@ button:hover{
 /* Footer End here */
 
 /* Project page start */
+@media only screen and (max-width: 480px){
+    .projectHeading h1{
+    
+        font-size: large;
+    
+    }
+    .descrive-wor li p{
+        font-size: 12px;
+    }
+}
 .projectMain{
-    padding: 2.5% 7%;
+    padding: 2.5% 10%;
     background-image: linear-gradient(to right,rgb(206, 253, 75),orange,orangered,red);
 }
 
@@ -858,9 +835,9 @@ button:hover{
 }
 
 .wrapper{
-    margin-left: 200px;
+    justify-content: space-between;
     display: flex;
-    width: 70%;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -868,8 +845,8 @@ button:hover{
 .cardProject{
     
     margin: 30px;
-    width: 510px;
-    height: 400px;
+    width: 410px;
+    height: 300px;
     padding: 2rem 1rem;
     background: #fff;
     position: relative;
@@ -892,7 +869,7 @@ button:hover{
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(102, 238, 238, 0.596), rgb(2, 7, 88));
+    background: linear-gradient(to bottom, rgba(241, 112, 245, 0.596), rgb(29, 1, 21));
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
@@ -909,6 +886,7 @@ button:hover{
     position: absolute;
     top: 0;
     left: 0;
+  
    
 
 }
@@ -926,7 +904,7 @@ button:hover{
 
 .info h1{
     font-weight: bold;
-    color: rgb(144, 237, 240);
+    color: white;
 }
 
 .cardProject:hover .info{
@@ -941,15 +919,16 @@ button:hover{
     border-color: orangered;
     color: white;
     padding: 5px;
-    width: 160px;
+    width: 100px;
     font-weight: bold;
 }
+
 
 .proBtn{
     /* display: flex;
     flex-direction: row; */
-    padding: 10px;
-    width: 440px;
+    padding: 20px;
+    width: 360px;
     display: flex;
     justify-content: space-between;
     
@@ -958,7 +937,7 @@ button:hover{
 .info button a:hover{
     color: white;
 }
-/* Project page start */
+/* Project page End */
 
 
 
@@ -1023,7 +1002,7 @@ button:hover{
       .cardProject{
           margin-left: 0%;
           width: 100%;
-          height: 300px;
+          height: 210px;
       }
       .proBtn{
         /* display: flex;
@@ -1035,6 +1014,12 @@ button:hover{
     }
     .proBtn button{
         width: 100px;
+    }
+
+    .info h1{
+        font-size: large;
+        font-weight: bold;
+        
     }
 
 
